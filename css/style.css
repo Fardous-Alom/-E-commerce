@@ -29,7 +29,7 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 html,
 body {
 	height: 100%;
@@ -166,7 +166,6 @@ ol {
 	color: #ffffff;
 	background: #000000;
 	letter-spacing: 4px;
-	text-decoration: none;
 }
 
 .site-btn {
@@ -346,11 +345,62 @@ ol {
 	letter-spacing: 2px;
 	margin-right: 28px;
 	display: inline-block;
-	text-decoration: none;
 }
 
 .header__top__links a:last-child {
 	margin-right: 0;
+}
+
+.header__top__hover {
+	display: inline-block;
+	position: relative;
+}
+
+.header__top__hover:hover ul {
+	top: 24px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.header__top__hover span {
+	color: #ffffff;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.header__top__hover span i {
+	font-size: 20px;
+	position: relative;
+	top: 3px;
+	right: 2px;
+}
+
+.header__top__hover ul {
+	background: #ffffff;
+	display: inline-block;
+	padding: 2px 0;
+	position: absolute;
+	left: 0;
+	top: 44px;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 3;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
+.header__top__hover ul li {
+	list-style: none;
+	font-size: 13px;
+	color: #111111;
+	padding: 2px 15px;
+	cursor: pointer;
 }
 
 .header__logo {
@@ -435,7 +485,6 @@ ol {
 	font-weight: 600;
 	position: relative;
 	padding: 3px 0;
-	text-decoration: none;
 }
 
 .header__menu ul li a:after {
@@ -587,7 +636,6 @@ ol {
 	-webkit-transition: all, 1.1s;
 	-o-transition: all, 1.1s;
 	transition: all, 1.1s;
-	text-decoration: none;
 }
 
 .hero__text .primary-btn span {
@@ -677,7 +725,6 @@ ol {
 	text-transform: uppercase;
 	padding: 3px 0;
 	position: relative;
-	text-decoration: none;
 }
 
 .banner__item__text a:after {
@@ -915,7 +962,6 @@ ol {
 	top: 22px;
 	opacity: 1;
 	visibility: visible;
-	text-decoration: none;
 }
 
 .product__item:hover .product__item__text h6 {
@@ -1933,7 +1979,6 @@ ol {
 .footer__widget ul li a {
 	color: #b7b7b7;
 	font-size: 15px;
-	text-decoration: none;
 }
 
 .footer__widget .footer__newslatter p {
@@ -2745,7 +2790,6 @@ ol {
 	text-transform: uppercase;
 	padding: 3px 0;
 	position: relative;
-	text-decoration: none;
 }
 
 .blog__item__text a:after {
